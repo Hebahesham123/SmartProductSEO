@@ -55,4 +55,5 @@ app.get('/', (req, res) => {
   res.send('AI Shopify Description App is running!');
 });
 
-app.listen(3000, () => console.log('Running on port 3000'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Running on port ${PORT}`));
